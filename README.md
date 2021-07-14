@@ -14,7 +14,8 @@ Finally, Tested the code by Python Shell and you can take look on the result fro
 Note: this project need downloading requirments that compatiable with your device.
 
 Some of Resources used: 
--Convert Your Speech to Text using Python
+
+- Convert Your Speech to Text using Python
  https://towardsdatascience.com/convert-your-speech-to-text-using-python-1cf3eccfa922
 - microphone_recognition.py -GitHub repository-
  https://github.com/Uberi/speech_recognition/blob/master/examples/microphone_recognition.py
