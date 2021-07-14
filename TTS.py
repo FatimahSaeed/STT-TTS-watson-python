@@ -1,3 +1,4 @@
+
 from ibm_watson import TextToSpeechV1
 from ibm_watson.websocket import RecognizeCallback, AudioSource
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
@@ -12,6 +13,7 @@ tts = TextToSpeechV1(
 #Insert URL in place of 'API_URL' 
 tts.set_service_url('API_URL')
 
+# recognize text using IBM Text to Speech
 # save TTS as mp3 file
 with open('./speech.mp3', 'wb') as audio_file:
      res = tts.synthesize('Testing text to speech service', accept='audio/mp3', voice='en-US_AllisonV3Voice').get_result()
