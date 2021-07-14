@@ -12,6 +12,7 @@ tts = TextToSpeechV1(
 #Insert URL in place of 'API_URL' 
 tts.set_service_url('API_URL')
 
+# save TTS as mp3 file
 with open('./speech.mp3', 'wb') as audio_file:
      res = tts.synthesize('Testing text to speech service', accept='audio/mp3', voice='en-US_AllisonV3Voice').get_result()
      audio_file.write(res.content) #write the content to the audio file 
